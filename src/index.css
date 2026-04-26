@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+:root {
+  --bg-sidebar: #2D2D2D;
+}
+
+@layer base {
+  body {
+    @apply antialiased overflow-hidden;
+  }
+}
+
+.workspace-area {
+  @apply h-screen w-screen flex flex-col;
+}
+
+.artboard-shadow {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
