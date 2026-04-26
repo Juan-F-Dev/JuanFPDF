@@ -1,8 +1,14 @@
+
+import { Main } from './components/base/Main';
+import { usePreventNativeZoom } from './hooks/usePreventNativeZoom';
+
 function App() {
+  usePreventNativeZoom();
+
   return (
-    <>
-      <h1 className="text-xl">Base</h1>
-    </>
+    <div className='workspace-area'>
+      <Main />
+    </div>
   );
 }
 
